@@ -56,7 +56,7 @@ module upcounter_7seg(
         if(reset_out==1)
             one_second_counter <= 0;
         else begin
-            if(one_second_counter>=49999999) 
+            if(one_second_counter>=99999999) 
                  one_second_counter <= 0;
             else
                 one_second_counter <= one_second_counter + 1;
